@@ -6,7 +6,8 @@ Coursera: Algorithms, Part I, Princeton University---Programming Assignments, We
 
 ### 1. classpath stdlib.jar
 
-### 2. Deque.java creates double-ended queue that supports inserting and removing items from 
+### 2. Deque.java 
+    It creates double-ended queue that supports inserting and removing items from 
     either the front or the back of the data structure. It implements the following API:
     public class Deque<Item> implements Iterable<Item> {
         public Deque()                           // construct an empty deque
@@ -25,7 +26,8 @@ Coursera: Algorithms, Part I, Princeton University---Programming Assignments, We
     not empty, first.next is oldfirst, oldfirst.previous is first. If we don't consider these condition 
     seperately, nullPointerException may occur.
     
-### 3. RandomizedQueue.java creates a queue that the item removed is chosen uniformly at random from items in 
+### 3. RandomizedQueue.java 
+    It creates a queue that the item removed is chosen uniformly at random from items in 
     the data structure. It implements the following API:
     public class RandomizedQueue<Item> implements Iterable<Item> {
         public RandomizedQueue()                 // construct an empty randomized queue
@@ -43,7 +45,8 @@ Coursera: Algorithms, Part I, Princeton University---Programming Assignments, We
     deleted location and then assign the last to null. In this case, we don't need to move a part of the queue
     and meanwhile realize randomly dequeue.
     
-### 4. Subset.java. It is a client program that takes a command-line integer k; reads in a sequence of N strings 
+### 4. Subset.java. 
+    It is a client program that takes a command-line integer k; reads in a sequence of N strings 
     from standard input using StdIn.readString(); and prints out exactly k of them, uniformly at random. Each 
     item from the sequence can be printed out at most once. This client uses RandomizedQueue.dequeue() to realize 
     its function.
